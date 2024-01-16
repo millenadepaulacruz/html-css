@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Models em CSS</title>
+    <style>
+        h1{
+            font: bold 1em Arial, Helvetica, sans-serif; 
+            background-color: lightcyan;
+            width: 300px;
+            height: 50px;
+            border-radius: 10px;
+            border: 10px solid pink;
+            padding-top: 40px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            outline: 10px dashed rgb(125, 219, 219);
+            margin: 30px auto;
+            text-align: center;
+        }
+        p{
+            font: bold 1em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 350px;
+            height: 75px;
+            background-color: rgb(204, 144, 231);
+            border: 10px dashed rgb(114, 114, 201);
+            border-radius: 15px;
+            padding: 20px;
+            outline: 15px solid rgb(153, 209, 226);
+            margin: 75px auto;
+        } 
+        
+        a{
+            text-decoration: none;
+        }
+
+        a:hover{
+           color: rgb(255, 0, 85);
+           background-color: beige;
+        }
+
+        a:active{
+            background-color: rgb(138, 212, 169);
+            color: beige;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa box-level</h1>
+    <p>Parágrafos tambem são box levels, mas os <a href="#"> links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

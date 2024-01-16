@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Dinâmica, Áudio e Vídeo</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <h2>Primeira Imagem Dinâmica</h2>
+    <p><picture>
+        <source media="(max-width: 750px)" srcset="imagens/floresta-300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/floresta-700.jpg" type="image/jpg">
+        <img src="imagens/floresta-1000.jpg" alt="Imagem flexivel 1">
+    </picture></p>
+    <h2>Segunda Imagem Dinâmica</h2>
+    <p><picture>
+        <source media="(max-width: 750px)" srcset="imagens/landscape-300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/landscape-700.jpg" type="image/jpg">
+        <img src="imagens/landscape-1000.jpg" alt="Imagem fexivel 2">
+    </picture></p>   
+    <br> 
+    <h1>Áudio</h1>
+    <audio preload="auto" controls autoplay loop>
+        <source src="audios/your-phone-linging.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta áudio. Clique <a href="audios/your-phone-linging.mp3" download="your-phone-linging.mp3" type="audio/mpeg">aqui.</a></p>
+    </audio>
+    <br>
+    <audio preload="none" controls>
+        <source src="audios/goofy-ahh-sounds.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta áudio. Clique <a href="audios/goofy-ahh-sounds.mp3" download="goofy-ahh-sounds.mp3" type="audio/mpeg">aqui.</a></p>
+    </audio>
+    <br>
+    <audio preload="metadata" controls>
+        <source src="audios/spongebob-fail.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta áudio. Clique <a href="audios/spongebob-fail.mp3" download="spongebob-fail.mp3" type="audio/mpeg">aqui.</a></p>
+    </audio>
+</body>
+</html>
