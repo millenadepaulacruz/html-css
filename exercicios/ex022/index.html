@@ -3,28 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sombras nas Box Models</title>
+    <title>Background Image</title>
     <style>
+        
         body{
-            font: 1em Arial, Helvetica, sans-serif;
-            background-color: peachpuff;
-            
+            background-image: url(images/pattern002.png);
+            background-repeat: no-repeat;
+            background-position: center center;
         }
-        article#caixa{
-            background-color: snow;
-            width: 400px;
-            margin: auto;
-            padding: 1px 10px;
+        
+        div.quadrado{
+            display: inline-block;
+            margin: 5px;
+            width: 250px;
+            height: 250px;
+            border: 3px solid black;
             border-radius: 10px;
-            box-shadow: 5px 5px 10px rgba(126, 125, 125, 0.541);
-            
         }
+
+        div#q1{
+            background-color: skyblue;
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, orange);
+        }   
+
+        div#q3{
+            background-image: url(images/pattern003.png);
+        }
+        /*
+        div.maior{
+            display: inline-block;
+            margin: 5px;
+            width: 500px;
+            height: 500px;
+            border: 3px solid black;
+            border-radius: 10px;
+            background-image: url(images/pattern002.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: auto; = normal size
+            background-size: 320px 200px; = width - height
+            background-size: 32% 45%; = width - height 
+        }
+        
+        div#fora{
+            height: 500px;
+            width: 500px;
+            background-color: #BD7DF5;
+            position: relative;
+        }
+        div#dentro{
+            height: 200px;
+            width: 300px;
+            background-color: #f5ff48;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        */
+
     </style>
 </head>
 <body>
-    <article id="caixa">
-        <h1>Usando Sombras</h1>
-        <p>Vamos aprender a usar sombras com esse exemplo simples.</p>
-    </article>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+    <div class="maior" id="q1"></div>
+    <div id="fora">
+        <div id="dentro"></div>
+    </div>
 </body>
 </html>
