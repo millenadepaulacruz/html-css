@@ -7,15 +7,22 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(images/wallpaper002.jpg);
             background-position: center top;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+            
+            /*Shorthand backround
+            color > image > position > [size] > attachment
+            */
+            background: black url('images/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
         main{
             background-color: rgb(255, 255, 255);
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
