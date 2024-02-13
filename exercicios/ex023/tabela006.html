@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+        
+        col.produtos{
+            text-align: left;
+        }
+
+        caption{
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+            font-variant: small-caps;
+            padding: 5px;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgb(228, 225, 225);
+        }
+
+        th{ 
+            font-variant: small-caps;
+        }
+
+        td, th{
+            border: 1px solid gray;
+            padding: 8px;
+            text-align: center;
+        }
+
+        div#container{
+            overflow-x: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet deserunt ad tempora, numquam harum qui id consequuntur ab cumque. Praesentium eos nesciunt dolores odio labore sit in amet officiis!</p>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="produtos">
+            </colgroup>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th scope="col" class="mes">Produto</th>
+                    <th scope="col" class="mes">Janeiro</th>
+                    <th scope="col" class="mes">Fevereiro</th>
+                    <th scope="col" class="mes">Março</th>
+                    <th scope="col" class="mes">Abril</th>
+                    <th scope="col" class="mes">Maio</th>
+                    <th scope="col" class="mes">Junho</th>
+                    <th scope="col" class="mes">Julho</th>
+                    <th scope="col" class="mes">Agosto</th>
+                    <th scope="col" class="mes">Setembro</th>
+                    <th scope="col" class="mes">Outubro</th>
+                    <th scope="col" class="mes">Novembro</th>
+                    <th scope="col" class="mes">Dezebro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV 65"</td>
+                    <td>05</td>
+                    <td>12</td>
+                    <td>08</td>
+                    <td>02</td>
+                    <td>07</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>09</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>02</td>
+                    <td>08</td>
+                </tr>
+                <tr>
+                    <td>iPhone 14</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>09</td>
+                    <td>07</td>
+                    <td>04</td>
+                    <td>06</td>
+                    <td>08</td>
+                    <td>03</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>11</td>
+                    <td>09</td>
+                </tr>
+                <tr>
+                    <td>iPad Mini</td>
+                    <td>07</td>
+                    <td>11</td>
+                    <td>06</td>
+                    <td>02</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>06</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>06</td>
+                </tr>
+                <tr>
+                    <td>PlayStation 5</td>
+                    <td>07</td>
+                    <td>11</td>
+                    <td>06</td>
+                    <td>02</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>06</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>06</td>
+                </tr>
+                <tr>
+                    <td>PS VR2</td>
+                    <td>07</td>
+                    <td>11</td>
+                    <td>06</td>
+                    <td>02</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>06</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>06</td>
+                </tr>
+                <tr>
+                    <td>Lava Louças</td>
+                    <td>07</td>
+                    <td>11</td>
+                    <td>06</td>
+                    <td>02</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>06</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>06</td>
+                </tr>
+                <tr>
+                    <td>Amazon Echo Dot</td>
+                    <td>07</td>
+                    <td>11</td>
+                    <td>06</td>
+                    <td>02</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>06</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>06</td>
+                </tr>
+                <tr>
+                    <td>Home Theater</td>
+                    <td>07</td>
+                    <td>11</td>
+                    <td>06</td>
+                    <td>02</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>06</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>06</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
