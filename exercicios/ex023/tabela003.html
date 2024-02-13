@@ -24,7 +24,7 @@
     
         th, td{
             border: 1px solid gray;
-            padding: 5px;
+            padding: 8px;
         }
     </style>
 </head>
@@ -37,12 +37,12 @@
             <tr>
                 <th scope="col">Grupo</th>
                 <th scope="col">Nomes</th>
-                <th scope="col" colspan="3">Filmes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -61,7 +61,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th scope="row" rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -80,6 +80,12 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>

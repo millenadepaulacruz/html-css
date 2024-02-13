@@ -13,12 +13,16 @@
             width: 350px;
             text-align: center;
             
+        }   
+
+        caption{
+            background-color: lightgray;
+            border: 1px solid gray;
         }
 
         td, th{
             border: 1px solid black;
             padding: 7px;
-            font-weight: bold;
         }
 
         table#materias{
@@ -27,14 +31,23 @@
             border-collapse: collapse;
         }
 
-        thead, tfoot, th{
+        thead{
             background-color: grey;
             color: white;
             font-weight: bold;
         }   
 
         th.medias{ 
+            background-color: grey;
+            color: white;
+            font-weight: bold;
             text-align: left;
+        }
+
+        td.medias{
+            background-color: grey;
+            color: white;
+            font-weight: bold;
         }
         
 
@@ -42,7 +55,7 @@
 </head>
 <body>
     <h1>Colspan e Rowspan</h1>
-    <table>
+    <table id="materias">
         <caption>Tabela com números</caption>
         <tr>
             <td>1</td>
@@ -97,14 +110,16 @@
             <td colspan="4">N</td>
         </tr>
     </table>
+    
     <br>
+
     <table id="materias">
         <caption>Tabela de médias</caption>
         <thead>
             <tr>
                 <th scope="col" rowspan="2">Área</th>
                 <th scope="col" rowspan="2">Disciplinas</th>
-                <th scope="col" colspan="2">Notas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
                 <th scope="col" rowspan="2">Média</th>
                 <tr>
                     <th>Nota 1</th>
@@ -114,7 +129,7 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="4"> Exatas</td>
+                <th rowspan="4" scope="rowgroup"> Exatas</th>
                 <td>Matemática</td>
                 <td>0.00</td>
                 <td>0.00</td>
@@ -140,10 +155,10 @@
             </tr>
             <tr>
                 <th scope="row" colspan="4" class="medias">Média de Exatas</th>
-                <th>0.00</th>
+                <td class="medias">0.00</td>
             </tr>
             <tr>
-                <td rowspan="2">Humanas</td>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td>0.00</td>
                 <td>0.00</td>
@@ -155,13 +170,12 @@
                 <td>0.00</td>
                 <td>0.00</td>
             </tr>
-        </tbody>
-        <tfoot>
+
             <tr>
                 <th scope="row" colspan="4" class="medias">Média de Humanas</th>
-                <th>0.00</th>
+                <td class="medias">0.00</td>
             </tr>
-        </tfoot>
+        </tbody>
     </table>
 </body>
 </html>
