@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas responsivas</title>
+    <title>iframe</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            padding: 5px;
         }
-
         table{
             border-collapse: collapse;
         }
@@ -26,7 +27,7 @@
         }
 
         tbody > tr:nth-child(odd){
-            background-color: rgb(228, 225, 225);
+            background-color: white;
         }
 
         th{ 
@@ -38,15 +39,14 @@
             padding: 8px;
             text-align: center;
         }
-
+        
         div#container{
-            overflow-x: auto;
+            overflow-x: scroll;
         }
+    
     </style>
 </head>
 <body>
-    <h1>Tabelas em telas pequenas</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet deserunt ad tempora, numquam harum qui id consequuntur ab cumque. Praesentium eos nesciunt dolores odio labore sit in amet officiis!</p>
     <div id="container">
         <table>
             <colgroup>
@@ -56,18 +56,18 @@
             <thead>
                 <tr>
                     <th scope="col" class="mes">Produto</th>
-                    <th scope="col" class="mes">Janeiro</th>
-                    <th scope="col" class="mes">Fevereiro</th>
-                    <th scope="col" class="mes">Março</th>
-                    <th scope="col" class="mes">Abril</th>
-                    <th scope="col" class="mes">Maio</th>
-                    <th scope="col" class="mes">Junho</th>
-                    <th scope="col" class="mes">Julho</th>
-                    <th scope="col" class="mes">Agosto</th>
-                    <th scope="col" class="mes">Setembro</th>
-                    <th scope="col" class="mes">Outubro</th>
-                    <th scope="col" class="mes">Novembro</th>
-                    <th scope="col" class="mes">Dezebro</th>
+                    <th scope="col" class="mes">Jan</th>
+                    <th scope="col" class="mes">Fev</th>
+                    <th scope="col" class="mes">Mar</th>
+                    <th scope="col" class="mes">Abr</th>
+                    <th scope="col" class="mes">Mai</th>
+                    <th scope="col" class="mes">Jun</th>
+                    <th scope="col" class="mes">Jul</th>
+                    <th scope="col" class="mes">Ago</th>
+                    <th scope="col" class="mes">Set</th>
+                    <th scope="col" class="mes">Out</th>
+                    <th scope="col" class="mes">Nov</th>
+                    <th scope="col" class="mes">Dez</th>
                 </tr>
             </thead>
             <tbody>
